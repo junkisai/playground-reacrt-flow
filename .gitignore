@@ -1,0 +1,10 @@
+node_modules
+
+*.tsbuildinfo
+
+# codegen
+*.module.scss.d.ts
+*.module.css.d.ts
+
+# build
+dist

@@ -1,0 +1,56 @@
+{
+  "name": "web-site-template",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "conc -c auto bun:dev:*",
+    "dev:astro": "astro dev",
+    "dev:scss": "typed-scss-modules src --watch",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "gen": "conc -c auto bun:gen:*",
+    "gen:scss": "typed-scss-modules src",
+    "lint": "conc -c auto bun:lint:*",
+    "lint:biome": "biome check .",
+    "lint:tsc": "tsc --noEmit",
+    "lint:astro": "astro check",
+    "lint:css": "stylelint './src/**/*.{css,scss}'",
+    "format": "conc -c auto bun:format:*",
+    "format:biome": "biome format --write .",
+    "format:prettier": "prettier -w './**/*.{md,yml,json}'",
+    "format:css": "stylelint './src/**/*.{css,scss}' --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/junkisai/web-site-template.git"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@astrojs/check": "^0.5.10",
+    "@astrojs/react": "^3.3.0",
+    "astro": "^4.6.0",
+    "destyle.css": "^4.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.6.4",
+    "@tsconfig/strictest": "^2.0.5",
+    "concurrently": "^8.2.2",
+    "prettier": "^3.2.5",
+    "sass": "^1.74.1",
+    "stylelint": "^16.3.1",
+    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-prettier": "^5.0.0",
+    "typed-scss-modules": "^8.0.1",
+    "typescript": "^5.4.5"
+  },
+  "packageManager": "pnpm@9.0.5",
+  "engines": {
+    "pnpm": "9.0.5",
+    "npm": "please_use_pnpm_instead",
+    "yarn": "please_use_pnpm_instead"
+  }
+}
