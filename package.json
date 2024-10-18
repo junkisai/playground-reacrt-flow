@@ -47,9 +47,9 @@
     "typed-scss-modules": "^8.0.1",
     "typescript": "^5.4.5"
   },
-  "packageManager": "pnpm@9.0.5",
+  "packageManager": "pnpm@9.12.2",
   "engines": {
-    "pnpm": "9.0.5",
+    "pnpm": "9.12.2",
     "npm": "please_use_pnpm_instead",
     "yarn": "please_use_pnpm_instead"
   }
